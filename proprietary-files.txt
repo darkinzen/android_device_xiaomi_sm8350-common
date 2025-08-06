@@ -1,4 +1,6 @@
 # All unpinned blobs below are extracted from taoyao V816.0.21.0.ULIMIXM
+# Current blobs with ELF checks disabled:
+# vendor.xiaomi.hardware.citsensorservice@1.1-impl.so depends on intrinsic symbols which changed namespaces such as set_ssc_sensor_list,ssccalapi_set_debug, transfer_parse_rgb_oem_msg, transfer_ssc_oem_test_msg which is difficult to shim
 
 # ADSP
 vendor/bin/adsprpcd
@@ -634,7 +636,7 @@ vendor/lib64/libssccalapi.so;DUMMY_SHARED_LIB
 vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
 vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so;DISABLE_CHECKELF
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
