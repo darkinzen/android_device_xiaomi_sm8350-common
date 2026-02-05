@@ -252,6 +252,10 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Lineage Interfaces
+PRODUCT_PACKAGES += \
+    framework_compatibility_matrix.lineage.xml
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
