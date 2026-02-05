@@ -134,6 +134,10 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
 
     void onAuthenticationFailed() { onFingerUp(); }
 
+        void cancel() override {
+            onFingerUp();
+        }
+
   private:
     fingerprint_device_t* mDevice;
     bool mAuthSuccess = false;
